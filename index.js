@@ -5,8 +5,10 @@ const {
     showHelp
 } = require(`./messaging`);
 
-const str = process.argv[2];
-const help = process.argv[3];
+const str = process.argv.slice(2);
+const help = str[0];
 
+
+if(arg.includes(`--help`))
+printHelp()
 capitalizeInitial(str);
-showHelp(str, help);
