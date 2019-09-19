@@ -3,12 +3,10 @@ const {
 } = require(`./formatting`);
 const {
     showHelp
-} = require(`./messaging`);
+} = require(`./showHelp`);
 
-const str = process.argv.slice(2);
-const help = str[0];
+const str = process.argv[2];
+const help = process.argv[3];
 
-
-if(arg.includes(`--help`))
-printHelp()
 capitalizeInitial(str);
+showHelp(str, help);
